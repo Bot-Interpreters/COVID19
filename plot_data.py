@@ -88,7 +88,6 @@ def plot_data_state(state):
     plt.savefig(f'data_insight\\{state}_cumulative.png')
     # plt.show()
     plt.close()
-    print(f'[INFO] Plot saved for state: {state}')
 
 
 for state in tqdm(sorted(data['confirmed'][0].keys())):
