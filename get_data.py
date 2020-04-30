@@ -48,4 +48,8 @@ with open('data\\states_daily.json', 'w') as f:
     json.dump(custom_data, f, indent=4)
 
 print('[INFO] Preprocessed states_daily.json')
+
+last_date = custom_data['confirmed'][-1]['date']
+print(f'Latest data available as per: {last_date}')
+
 input('Press ENTER to quit...')
